@@ -54,7 +54,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 #### 2. Undistort an example image
 
-I distortion-corrected the image by applying the cv2.undistort function by using distortion matrix mxt and dist.
+I distortion-corrected the image by applying the `cv2.undistort` function by using distortion matrix mxt and dist.
 Here an example of an undistorted image is shown:
 <img src="/output_images/img_undist.png " width="600"/>
 
@@ -72,18 +72,18 @@ To identify bright points in the image the Sobel Operator is applyed to the imag
 ```python
 thresh_min = 50
 thresh_max = 100
-
+```
 <img src="/output_images/img_sobel.png " width="600"/>
 
 #### 6. Convert to HLS
 
 To achieve better results the initial image is converted from RGB to HLS color space. The HLS color space has a color channel for lighting, that is way more suitable to detected lines.
-To convert the initial image to HLS the cvtColor() function is applied.
+To convert the initial image to HLS the `cvtColor()` function is applied.
 The thresholds for min and max of the S-channel were (example image):
 ```python
 s_thresh_min = 150
 s_thresh_max = 255
-
+``` 
 <img src="/output_images/img_hls.png " width="600"/>
 
 #### 7. Stack the filters
