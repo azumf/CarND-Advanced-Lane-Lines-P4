@@ -56,7 +56,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 I distortion-corrected the image by applying the `cv2.undistort` function by using distortion matrix mxt and dist.
 Here an example of an undistorted image is shown:
-<img src="/output_images/img_undist.png " width="600"/>
+<img src="/output_images/img_undist.png " width="800"/>
 
 #### 3. Getting the binary image
 
@@ -91,7 +91,7 @@ s_thresh_max = 255
 To combine the advantages of both, gradient and HLS-convertion, both filters are stacked to gain the binary output.
 This step is described in 1.6 of the jupyter notebook.
 
-<img src="/output_images/img_stacked.png " width="600"/>
+<img src="/output_images/img_stacked.png " width="800"/>
 
 
 #### 8. Perspective transformation
@@ -107,6 +107,7 @@ x3 = 710
 y3 = 440 
 x4 = 1130
 y4 = 720
+```
 
 Drawn into the image:
 <img src="/output_images/img_section.png " width="600"/>
