@@ -117,6 +117,7 @@ The corresponding code can be found in the code cells of section 1.7 of the jupy
 As destination points, a rectangle was defined:
 ```python
 dst = np.float32([[950, 0], [950, 720], [370, 720], [370, 0]])
+```
 
 First, the warp matrix M was calculated by applying the getPerspectiveTransform() function with src and dst as inputs.
 To warp the image the warpPerspective() function was used. 
@@ -148,6 +149,7 @@ lane_length = 30
 lane_width = 3.7 
 ym_per_pix = 30/720
 xm_per_pix = 3.7/580
+```
 
 are used.
 As well the distance of the vehicle from the middle of the lane can be calculated by using the midpoint of the x-axis.
