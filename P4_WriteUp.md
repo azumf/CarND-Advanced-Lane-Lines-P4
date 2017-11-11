@@ -210,6 +210,8 @@ def process_image(image):
 
 
 The used `src` and `dst` points for the pipeline were:
+
+
 | Source        | Destination   | 
 |:-------------:|:-------------:| 
 | 620, 455      | 370, 0        | 
