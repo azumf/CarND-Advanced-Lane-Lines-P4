@@ -147,10 +147,12 @@ The red arrows show a change of road surface due to construction work or whateve
 
 #### 10. Finding the lane lines
 To find the lane lines on the warped image the image data is converted to a histogram classification using the pixel values along the x-axis. The maxima of the data plot are the two lane lines.
+
 ![histogram](/output_images/lane_hist.png)
 
 #### 11. Measuring the curvature
 To measure the curvature and fit a polynomial the sliding windows approach is used. The corresponding code can be found in section 1.10 of the jupyter notebook. The image is scanned with a defined amount of windows from in inverted direction of the y-axis `max --> min` and a polynomial fit is calculated for the lane line section in each window. The fit is calculated using the `polyfit()` function of NumPy.
+
 ![sliding windows](/output_images/img_windows.png)
 
 #### 12. Visualize the lane lines
@@ -205,6 +207,7 @@ def process_image(image):
     processed_img = pipeline(image, mtx, dist, 5, 35, 100, 115, 255)
     return processed_img
 ```
+
 
 The used `src` and `dst` points for the pipeline were:
 | Source        | Destination   | 
