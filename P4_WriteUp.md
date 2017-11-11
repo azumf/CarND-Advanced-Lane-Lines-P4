@@ -91,7 +91,7 @@ s_thresh_max = 255
 To combine the advantages of both, gradient and HLS-convertion, both filters are stacked to gain the binary output.
 This step is described in 1.6 of the jupyter notebook.
 
-<img src="/output_images/img_stacked.png " width="800"/>
+![Binary output](/output_images/img_stacked.png)
 
 
 #### 8. Perspective transformation
